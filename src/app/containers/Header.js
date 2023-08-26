@@ -1,12 +1,24 @@
+"use client"
 import Image from 'next/image'
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import DesktopNavbar from './DesktopNavbar'
 import LinkButton from '../components/LinkButton'
 import Link from 'next/link'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faX } from '@fortawesome/free-solid-svg-icons'
+import MobileNavbar from './MobileNavbar'
 
-const Header = ({ setIsMobNavbarOut, isMobNavbarOut }) => {
+const Header = () => {
+  const [isMobNavbarOut, setIsMobNavbarOut] = useState(false);
+
+  useEffect(() => {
+    if (isMobNavbarOut) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "visible";
+    }
+  }, [isMobNavbarOut])
+
   return (
     <>
       <header className='sticky top-0 w-full bg-themeColorExtraLight z-20'>
@@ -16,6 +28,7 @@ const Header = ({ setIsMobNavbarOut, isMobNavbarOut }) => {
               <Image
                 src="https://assets-global.website-files.com/5d8d029013ffd80bbb91320d/5ef1f340d1a59cdf49926d8e_Guru%20logo.svg"
                 width={48}
+                priority
                 height={48}
                 alt="Logo"
               />
@@ -28,13 +41,15 @@ const Header = ({ setIsMobNavbarOut, isMobNavbarOut }) => {
               <LinkButton text={"Book a demo"} href={"#"} type={"outlined"} />
             </div>
             <div className='hidden md:block'>
-              <button className='p-2' onClick={() => (setIsMobNavbarOut((prevState) => !prevState))}>
-                <FontAwesomeIcon icon={isMobNavbarOut ? faX : faBars} className='text-black w-7 h-7' />
+              <button className='p-1' onClick={() => (setIsMobNavbarOut((prevState) => !prevState))}>
+                <FontAwesomeIcon icon={isMobNavbarOut ? faX : faBars} width={"28px"} height={"28px"} className='text-black w-7 h-7' />
               </button>
             </div>
           </div>
         </div>
       </header>
+
+      <MobileNavbar isMobNavbarOut={isMobNavbarOut} />
     </>
   )
 }
