@@ -22,7 +22,8 @@ module.exports = {
     },
     extend: {
       colors: {
-        "themeColor": "#2463eb",
+        "themeColor": "#5c90ff",
+        "themeColorExtraLight": "#ebf1ff",
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

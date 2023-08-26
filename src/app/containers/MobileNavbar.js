@@ -1,12 +1,13 @@
 import React from 'react'
 import Navitem from '../components/Navitem'
+import LinkButton from '../components/LinkButton'
 
 
-const Navbar = () => {
+const MobileNavbar = ({ isMobNavbarOut }) => {
 
   return (
-    <nav>
-      <ul className="flex items-center">
+    <nav className={`hidden md:block bg-white absolute w-full h-screen ${isMobNavbarOut ? "top-0" : "-top-full"} transition-all duration-500 left-0 right-0 z-10 pt-24 overflow-y-auto`}>
+      <ul className="flex flex-col items-start">
         <Navitem text={"Product"} dropdownAlignment={"right"} dropdownItems={[{
           text: "Features",
           href: "#",
@@ -71,8 +72,13 @@ const Navbar = () => {
         ]} />
         <Navitem text={"Enterprise"} isLink={true} href={"#"} />
       </ul>
+      <hr className='my-4' />
+      <div className='grid grid-cols-2 gap-x-2 p-4 pb-10'>
+        <LinkButton text={"Log in"} type='outtlined' />
+        <LinkButton text={"Sign up"} />
+      </div>
     </nav>
   )
 }
 
-export default Navbar
+export default MobileNavbar
