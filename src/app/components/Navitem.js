@@ -9,7 +9,8 @@ const Navitem = ({
   isLink = false,
   className = "",
   href,
-  dropdownItems
+  dropdownItems,
+  dropdownAlignment
 }) => {
   const [isHovered, setIsHovered] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
@@ -50,6 +51,7 @@ const Navitem = ({
               isHovered={isHovered}
               // isClicked={isClicked}
               dropdownItems={dropdownItems}
+              dropdownAlignment={dropdownAlignment}
             />
           </>
         )}
