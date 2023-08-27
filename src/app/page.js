@@ -4,6 +4,7 @@ import Header2 from './containers/Header2'
 import NavTop from './containers/NavTop'
 import LogosSection from './containers/LogosSection'
 import GMDSection from './containers/GMDSection'
+import BookDemoSection from './containers/BookDemoSection'
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
       <Header2 />
       <LogosSection />
       <GMDSection />
+      <BookDemoSection />
     </>
   )
 }
