@@ -19,7 +19,7 @@ const LinkButton = ({ text, size = "medium", href, type = "solid", className = "
   if (size === "medium") {
     sizeStyles = "text-sm p-4 font-semibold lg:p-3";
   } else if (size === "large") {
-    sizeStyles = "text-3xl px-8 py-6 font-semibold md:text-2xl md:px-6 md:py-4 sm:text-xl";
+    sizeStyles = "text-2xl px-8 py-6 font-semibold md:text-2xl md:px-6 md:py-4 sm:text-xl";
   }
 
   let hasIconStyles = "";

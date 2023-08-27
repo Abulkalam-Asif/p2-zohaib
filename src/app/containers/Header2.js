@@ -1,31 +1,49 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import Header2Box from '../components/Header2Box'
 import H1 from '../components/H1'
 import LinkButton from '../components/LinkButton'
+import ReactPlayer from 'react-player'
 
 const Header2 = () => {
+  const [isClient, setIsClient] = useState(false)
+
+  useEffect(() => {
+    setIsClient(true);
+  }, [])
+
   return (
     <>
       <section className='w-full'>
-        <div className='max-w-8xl mx-auto px-16 py-12 flex flex-col items-center justify-center gap-y-6 md:px-12 sm:px-4'>
-          <div className='flex gap-x-5 items-center text-xs font-semibold md:gap-x-3 sm:gap-x-1 sm:text-xxs'>
-            <Header2Box text={"AI Enterprise search"} />
-            <span>+</span>
-            <Header2Box text={"Wiki"} />
-            <span>+</span>
-            <Header2Box text={"Intranet"} />
-            <span>+</span>
-            <Header2Box text={"Knowledge Base"} />
+        <div className='max-w-8xl mx-auto py-12 px-8 grid grid-cols-5 gap-8 xl:grid-cols-4 lg:grid-cols-1 items-stretch justify-stretch'>
+          <div className='col-span-2 flex flex-col items-start justify-center gap-y-8 lg:items-center'>
+            <div className='flex gap-x-5 items-center text-xs font-semibold md:gap-x-3 sm:gap-x-1 sm:text-xxs'>
+              <Header2Box text={"AI Enterprise search"} />
+              <span>+</span>
+              <Header2Box text={"Wiki"} />
+              <span>+</span>
+              <Header2Box text={"Intranet"} />
+              <span>+</span>
+              <Header2Box text={"Knowledge Base"} />
+            </div>
+            <div>
+              <H1 text={"AI-powered knowledge management for instant answers"} />
+            </div>
+            <div>
+              <LinkButton text={"Book a demo"} size="large" hasIcon={true} href={"#"} />
+            </div>
           </div>
-          <div>
-            <H1 text={"Trusted, instant answers"} />
-          </div>
-          <div className='text-center'>
-            Surface trusted information wherever your team works. Guru is your single source of truth, built effortlessly.
-          </div>
-          <div>
-            <LinkButton text={"Take a product tour"} size="large" hasIcon={true} href={"#"} />
-          </div>
+          {isClient &&
+            <div className='col-span-3 xl:col-span-2'>
+              <iframe
+                className='w-full h-full min-h-[400px] sm:min-h-[300px] xs:min-h-[200px]'
+                src="https://www.youtube.com/embed/D0UnqGm_miA"
+                title="YouTube video player"
+                frameBorder="0"
+                allowFullScreen
+              ></iframe>
+            </div>
+          }
         </div>
       </section>
     </>

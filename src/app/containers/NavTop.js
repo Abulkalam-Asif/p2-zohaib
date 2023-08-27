@@ -5,7 +5,7 @@ const NavTop = () => {
   return (
     <>
       <nav className='w-full md:hidden'>
-        <ul className='max-w-8xl mx-auto px-4 pt-6 pb-2 flex justify-end items-center'>
+        <ul className='max-w-8xl mx-auto px-8 pt-6 pb-2 flex justify-end items-center'>
           <li>
             <LinkButton text={"Sign up"} type='plain' size='small' href={"#"} />
           </li>

@@ -22,7 +22,7 @@ const Header = () => {
   return (
     <>
       <header className='sticky top-0 w-full bg-themeColorExtraLight z-20'>
-        <div className='max-w-8xl mx-auto py-6 flex items-center gap-x-8 px-4 lg:gap-x-4'>
+        <div className='max-w-8xl mx-auto py-6 flex items-center gap-x-8 px-8 lg:gap-x-4'>
           <div>
             <Link href={"/"}>
               <Image
