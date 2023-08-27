@@ -27,6 +27,9 @@ module.exports = {
         "themeColorExtraLight": "#ebf1ff",
         "logosColor": "#beced6"
       },
+      rotate: {
+        "18": "18deg"
+      },
       fontSize: {
         "xxs": "0.625rem",
       },
