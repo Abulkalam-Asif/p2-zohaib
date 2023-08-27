@@ -48,7 +48,6 @@ const Header = () => {
           </div>
         </div>
       </header>
-
       <MobileNavbar isMobNavbarOut={isMobNavbarOut} />
     </>
   )

@@ -23,7 +23,14 @@ module.exports = {
     extend: {
       colors: {
         "themeColor": "#5c90ff",
+        "themeColorLight": "#cfddff",
         "themeColorExtraLight": "#ebf1ff",
+      },
+      fontSize: {
+        "xxs": "0.625rem",
+      },
+      scale: {
+        "102": "1.02"
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
