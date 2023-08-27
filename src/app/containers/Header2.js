@@ -7,7 +7,7 @@ const Header2 = () => {
   return (
     <>
       <section className='w-full'>
-        <div className='max-w-8xl mx-auto px-16 pt-10 flex flex-col items-center justify-center gap-y-6 md:px-12 sm:px-4'>
+        <div className='max-w-8xl mx-auto px-16 py-12 flex flex-col items-center justify-center gap-y-6 md:px-12 sm:px-4'>
           <div className='flex gap-x-5 items-center text-xs font-semibold md:gap-x-3 sm:gap-x-1 sm:text-xxs'>
             <Header2Box text={"AI Enterprise search"} />
             <span>+</span>
