@@ -18,13 +18,14 @@ module.exports = {
       'sm': { 'max': '640px' },
       // => @media (max-width: 640px) { ... }
       'xs': { 'max': '480px' },
-      // => @media (max-width: 640px) { ... }
+      // => @media (max-width: 480px) { ... }
     },
     extend: {
       colors: {
         "themeColor": "#5c90ff",
         "themeColorLight": "#cfddff",
         "themeColorExtraLight": "#ebf1ff",
+        "logosColor": "#beced6"
       },
       fontSize: {
         "xxs": "0.625rem",
