@@ -1,5 +1,6 @@
 "use client"
-import React, { useState } from 'react'
+import React from 'react'
+import { useSidebarContext } from '../contexts/SidebarContext'
 import LinkButton2 from '../components/LinkButton2'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import LinkButton3 from '../components/LinkButton3'
@@ -12,18 +13,15 @@ import supportIcon from "../assets/dashboard/support.svg";
 import logoutIcon from "../assets/dashboard/logout.svg";
 
 const Sidebar = () => {
-  const [isSidebarOut, setIsSidebarOut] = useState(true);
 
-  const sidebarHandler = () => {
-    setIsSidebarOut((prevState) => !prevState);
-  }
+  const { isSidebarOut, toggleSidebar } = useSidebarContext();
 
   return (
     <>
-      <aside className='h-screen w-fit border-r-2 border-r-themeColorLight'>
+      <aside className='fixed top-0 left-0 bottom-0 h-screen w-fit border-r-2 border-r-themeColorLight'>
         <div className='flex flex-col items-stretch h-full py-6'>
           <div className='px-4'>
-            <LinkButton3 text={"Dashworks"} icon={faBars} onClick={sidebarHandler} isSidebarOut={isSidebarOut} />
+            <LinkButton3 text={"Dashworks"} icon={faBars} onClick={toggleSidebar} isSidebarOut={isSidebarOut} />
           </div>
           <div className='mt-4 flex-1 flex flex-col gap-y-2 px-4'>
             <LinkButton2 text={"Home"} isSidebarOut={isSidebarOut} icon={homeIcon} href='/home' />
