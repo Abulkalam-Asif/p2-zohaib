@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { useSidebarContext } from '@/app/contexts/SidebarContext';
 
-const page = () => {
+const Page = () => {
   const { isSidebarOut } = useSidebarContext();
 
   return (
@@ -32,4 +32,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page

@@ -6,7 +6,7 @@ import LogosSection from './containers/LogosSection'
 import GMDSection from './containers/GMDSection'
 import BookDemoSection from './containers/BookDemoSection'
 
-const page = () => {
+const Page = () => {
   return (
     <>
       <NavTop />
@@ -19,4 +19,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Page
