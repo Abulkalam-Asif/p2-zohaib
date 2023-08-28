@@ -18,7 +18,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <aside className='fixed top-0 left-0 bottom-0 h-screen w-fit border-r-2 border-r-themeColorLight'>
+      <aside className='fixed top-0 left-0 bottom-0 h-screen w-fit border-r-2 border-r-themeColor2Light bg-white z-50'>
         <div className='flex flex-col items-stretch h-full py-6'>
           <div className='px-4'>
             <LinkButton3 text={"Dashworks"} icon={faBars} onClick={toggleSidebar} isSidebarOut={isSidebarOut} />
@@ -28,7 +28,7 @@ const Sidebar = () => {
             <LinkButton2 text={"Settings"} isSidebarOut={isSidebarOut} icon={settingsIcon} href='/settings' />
             <LinkButton2 text={"Connect Apps"} isSidebarOut={isSidebarOut} icon={connectIcon} href='/connect_apps' />
           </div>
-          <hr className='border-t-2 border-themeColorLight my-6' />
+          <hr className='border-t-2 border-themeColor2Light my-6' />
           <div className='flex flex-col gap-y-2 px-4'>
             <LinkButton2 text={"Invite"} isSidebarOut={isSidebarOut} icon={inviteIcon} />
             <LinkButton2 text={"Talk to a Specialist"} isSidebarOut={isSidebarOut} icon={specialistIcon} />

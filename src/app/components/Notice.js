@@ -5,7 +5,7 @@ import Image from 'next/image';
 const Notice = () => {
   return (
     <>
-      <div className='flex gap-x-2 border-2 border-themeColor rounded-lg p-3'>
+      <div className='flex gap-x-2 border-2 border-themeColor2Light rounded-lg p-3'>
         <Image width={0} height={0} src={lockIcon} alt="icon" />
         <p className='text-sm text-zinc-500'>Dashworks respects the permissions in your connected apps by automatically synchronizing document-level permissions. This ensures that your team members can only see documents to which they already have access.</p>
       </div>
