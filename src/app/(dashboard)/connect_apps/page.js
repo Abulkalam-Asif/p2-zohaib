@@ -11,7 +11,7 @@ const Page = () => {
 
   return (
     <>
-      <div className={`flex-1 transition-all delay-100 duration-300 ${isSidebarOut ? "ml-72" : "ml-0"}`}>
+      <div className={`flex-1 transition-all ${isSidebarOut ? "ml-72 duration-100" : "ml-0 delay-200 duration-300"}`}>
         <div className='max-w-4xl mx-auto mt-20 mb-10 space-y-8'>
           <div>
             <h1 className='text-xl font-bold'>Connect Your Data Sources</h1>

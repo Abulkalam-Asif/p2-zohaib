@@ -7,7 +7,7 @@ const Header2 = () => {
 
   return (
     <>
-      <section className='w-full'>
+      <section className='w-full bg-themeColorExtraLight'>
         <div className='max-w-8xl mx-auto py-12 px-8 grid grid-cols-5 gap-8 xl:grid-cols-4 lg:grid-cols-1 items-stretch justify-stretch'>
           <div className='col-span-2 flex flex-col items-start justify-center gap-y-8 lg:items-center'>
             <div className='flex gap-x-5 items-center text-xs font-semibold md:gap-x-3 sm:gap-x-1 sm:text-xxs'>
