@@ -5,16 +5,16 @@ import React from 'react'
 const LinkButton = ({ text, size = "medium", href, type = "solid", className = "", hasIcon = false }) => {
   let typeStyles = "";
   if (type === "solid") {
-    typeStyles = "bg-black text-white border-2 border-black hover:bg-themeColor hover:text-black hover:border-themeColor";
+    typeStyles = "bg-black text-white border-2 border-black hocus:bg-themeColor hocus:text-black hocus:border-themeColor";
   } else if (type === "outlined") {
-    typeStyles = "bg-white text-black border-2 border-black hover:bg-themeColor hover:text-black hover:border-themeColor";
+    typeStyles = "bg-white text-black border-2 border-black hocus:bg-themeColor hocus:text-black hocus:border-themeColor";
   } else if (type === "plain") {
-    typeStyles = "text-black bg-themeColorExtraLight hover:bg-themeColorLight";
+    typeStyles = "text-black bg-themeColorExtraLight hocus:bg-themeColorLight";
   }
 
   let sizeStyles = "";
   if (size === "small") {
-    sizeStyles = "text-sm px-4 py-3 font-normal hover:font-semibold";
+    sizeStyles = "text-sm px-4 py-3 font-normal hocus:font-semibold";
   }
   if (size === "medium") {
     sizeStyles = "text-sm p-4 font-semibold lg:p-3";
@@ -24,7 +24,7 @@ const LinkButton = ({ text, size = "medium", href, type = "solid", className = "
 
   let hasIconStyles = "";
   if (hasIcon) {
-    hasIconStyles = "flex items-center gap-x-4 hover:gap-x-6 hover:scale-102"
+    hasIconStyles = "flex items-center gap-x-4 hocus:gap-x-6 hocus:scale-102"
   }
   return (
     <>

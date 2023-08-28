@@ -1,16 +1,9 @@
-"use client"
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Header2Box from '../components/Header2Box'
 import H1 from '../components/H1'
 import LinkButton from '../components/LinkButton'
-import ReactPlayer from 'react-player'
 
 const Header2 = () => {
-  const [isClient, setIsClient] = useState(false)
-
-  useEffect(() => {
-    setIsClient(true);
-  }, [])
 
   return (
     <>
@@ -33,17 +26,13 @@ const Header2 = () => {
               <LinkButton text={"Book a demo"} size="large" hasIcon={true} href={"#"} />
             </div>
           </div>
-          {isClient &&
-            <div className='col-span-3 xl:col-span-2'>
-              <iframe
-                className='w-full h-full min-h-[400px] sm:min-h-[300px] xs:min-h-[200px]'
-                src="https://www.youtube.com/embed/D0UnqGm_miA"
-                title="YouTube video player"
-                frameBorder="0"
-                allowFullScreen
-              ></iframe>
-            </div>
-          }
+          <div className='col-span-3 xl:col-span-2'>
+            <iframe
+              className='w-full h-full min-h-[400px] sm:min-h-[300px] xs:min-h-[200px]'
+              src="https://www.youtube.com/embed/D0UnqGm_miA"
+              title="YouTube video player"
+            ></iframe>
+          </div>
         </div>
       </section>
     </>

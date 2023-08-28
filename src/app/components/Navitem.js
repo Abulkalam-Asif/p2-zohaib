@@ -12,23 +12,23 @@ const Navitem = ({
   dropdownItems,
   dropdownAlignment
 }) => {
-  const [isHovered, setIsHovered] = useState(false);
+  const [ishocused, setIshocused] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
 
   const handleIsClicked = () => {
     setIsClicked((prevState) => !prevState);
   };
-  const handleIsHovered = () => {
+  const handleIshocused = () => {
     if (window.innerWidth > 768) {
-      setIsHovered((prevState) => !prevState);
+      setIshocused((prevState) => !prevState);
     }
   };
   return (
     <>
       <li
         className={`relative w-full cursor-pointer md:font-semibold ${className}`}
-        onMouseEnter={handleIsHovered}
-        onMouseLeave={handleIsHovered}
+        onMouseEnter={handleIshocused}
+        onMouseLeave={handleIshocused}
         onClick={handleIsClicked}>
         {isLink ? (
           <a
@@ -50,7 +50,7 @@ const Navitem = ({
               />
             </span>
             <NavDropdown
-              isHovered={isHovered}
+              ishocused={ishocused}
               isClicked={isClicked}
               dropdownItems={dropdownItems}
               dropdownAlignment={dropdownAlignment}
