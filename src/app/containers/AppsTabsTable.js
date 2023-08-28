@@ -9,13 +9,13 @@ const AppsTabsTable = ({ appsData, selectedTab }) => {
         <table className="w-full text-base text-left text-gray-500">
           <thead className="text-sm text-zinc-900 uppercase bg-themeColor2Light">
             <tr className='grid grid-cols-4'>
-              <th scope="col" className="px-6 py-3 col-span-2">
+              <th scope="col" className="px-6 py-3 col-span-2 font-medium">
                 Apps
               </th>
-              <th scope="col" className="px-6 py-3 text-center">
+              <th scope="col" className="px-6 py-3 text-center font-medium">
                 Organizational
               </th>
-              <th scope="col" className="px-6 py-3 text-center">
+              <th scope="col" className="px-6 py-3 text-center font-medium">
                 Personal
               </th>
             </tr>
