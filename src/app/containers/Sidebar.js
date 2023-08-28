@@ -26,9 +26,9 @@ const Sidebar = () => {
             <LinkButton3 text={"Dashworks"} icon={faBars} onClick={sidebarHandler} isSidebarOut={isSidebarOut} />
           </div>
           <div className='mt-4 flex-1 flex flex-col gap-y-2 px-4'>
-            <LinkButton2 text={"Home"} isSidebarOut={isSidebarOut} icon={homeIcon} />
-            <LinkButton2 text={"Settings"} isSidebarOut={isSidebarOut} icon={settingsIcon} />
-            <LinkButton2 text={"Connect Apps"} isSidebarOut={isSidebarOut} icon={connectIcon} />
+            <LinkButton2 text={"Home"} isSidebarOut={isSidebarOut} icon={homeIcon} href='/home' />
+            <LinkButton2 text={"Settings"} isSidebarOut={isSidebarOut} icon={settingsIcon} href='/settings' />
+            <LinkButton2 text={"Connect Apps"} isSidebarOut={isSidebarOut} icon={connectIcon} href='/connect_apps' />
           </div>
           <hr className='border-t-2 border-themeColorLight my-6' />
           <div className='flex flex-col gap-y-2 px-4'>
