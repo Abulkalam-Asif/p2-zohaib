@@ -4,7 +4,7 @@ import { SidebarProvider } from "../contexts/SidebarContext";
 export default function RootLayout({ children }) {
   return (
     <SidebarProvider>
-      <main className="flex">
+      <main>
         <Sidebar />
         {children}
       </main>
