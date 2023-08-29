@@ -88,21 +88,21 @@ const Page = () => {
             </div>
           </div>
           <div className='border-b-2 pb-8 flex justify-between items-center'>
-            <div className='space-y-2'>
+            <label htmlFor='allowUser' className='space-y-2 cursor-pointer flex-1'>
               <h2 className='font-bold text-lg'>Allow users to set their own background</h2>
               <p className='font-semibold text-themeColor2'>This lets your team access Dashworks from their browser's new tab page.</p>
-            </div>
+            </label>
             <div>
-              <Toggle isChecked={isAllowUserToggleChecked} onChangeHandler={allowUserHandler} />
+              <Toggle id={"allowUser"} isChecked={isAllowUserToggleChecked} onChangeHandler={allowUserHandler} />
             </div>
           </div>
           <div className='border-b-2 pb-8 flex justify-between items-center'>
-            <div className='space-y-2'>
+            <label htmlFor={"setDashworks"} className='space-y-2 cursor-pointer flex-1'>
               <h2 className='font-bold text-lg'>Set Dashworks as your team's new tab page</h2>
               <p className='font-semibold text-themeColor2'>Allow user to override the company homepage with their own background.</p>
-            </div>
+            </label>
             <div>
-              <Toggle isChecked={isSetDashworksHandler} onChangeHandler={setDashworksHandler} />
+              <Toggle id={"setDashworks"} isChecked={isSetDashworksHandler} onChangeHandler={setDashworksHandler} />
             </div>
           </div>
         </div>
