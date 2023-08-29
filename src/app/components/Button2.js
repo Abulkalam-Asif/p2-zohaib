@@ -9,7 +9,7 @@ const Button2 = ({ text, onClick, type, styleType = "filled" }) => {
   }
   return (
     <>
-      <button type={type} onClick={onClick} className={`cursor-pointer text-center px-5 py-3 font-semibold rounded-md transition-all duration-200 whitespace-nowrap ${styleTypeStyles}`}>{text}</button>
+      <button type={type} onClick={onClick} className={`cursor-pointer text-center px-5 py-3 font-semibold rounded-xl transition-all duration-200 whitespace-nowrap ${styleTypeStyles}`}>{text}</button>
     </>
   )
 }
