@@ -1,5 +1,6 @@
 "use client"
 import HomeSearchBar from '@/app/components/HomeSearchBar';
+import Announcements from '@/app/containers/Announcements';
 import BookmarksDiv from '@/app/containers/BookmarksDiv';
 import { useSidebarContext } from '@/app/contexts/SidebarContext';
 import React, { useState } from 'react'
@@ -22,6 +23,7 @@ const Page = () => {
           </div>
           <BookmarksDiv heading={"My Bookmarks"} bookmarks={myBookmarks} setBookmarks={setMyBookmarks} />
           <BookmarksDiv heading={"Company Bookmarks"} bookmarks={companyBookmarks} setBookmarks={setCompanyBookmarks} />
+          <Announcements />
         </div>
       </div>
     </>

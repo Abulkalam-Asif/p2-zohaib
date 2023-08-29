@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Bookmark from '../components/Bookmark'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus, faX } from '@fortawesome/free-solid-svg-icons'
@@ -26,6 +26,14 @@ const BookmarksDiv = ({ heading, bookmarks, setBookmarks }) => {
     setNewBookmark(defaultBookmark);
     setIsBookmarkBoxVisible((prevState) => !prevState);
   }
+  useEffect(() => {
+    if (isBookmarkBoxVisible) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "visible";
+    }
+  }, [isBookmarkBoxVisible])
+
 
 
 
@@ -44,7 +52,7 @@ const BookmarksDiv = ({ heading, bookmarks, setBookmarks }) => {
           <div className='px-4'>
             <button onClick={toggleBookmarkBox} className='w-full flex flex-col items-center gap-y-3'>
               <FontAwesomeIcon className='bg-white h-5 w-5  rounded-xl p-2' icon={faPlus} width={0} height={0} />
-              <span className='text-sm font-semibold text-center'>Add Bookmark</span>
+              <span className='text-white text-sm font-semibold text-center'>Add Bookmark</span>
             </button>
           </div>
         </div>
@@ -52,7 +60,7 @@ const BookmarksDiv = ({ heading, bookmarks, setBookmarks }) => {
           isBookmarkBoxVisible &&
           <>
             <div className='fixed top-0 left-0 right-0 bottom-0 z-30 bg-black opacity-20' onClick={toggleBookmarkBox}></div>
-            <div className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white px-10 py-10 rounded-xl shadow-2xl z-40'>
+            <div className='fixed left-1/2 top-1/2 -translate-y-1/2 bg-white px-10 py-10 rounded-xl shadow-2xl z-40'>
               <button className='absolute top-3 right-4' onClick={toggleBookmarkBox}>
                 <FontAwesomeIcon icon={faX} width={16} height={16} />
               </button>
