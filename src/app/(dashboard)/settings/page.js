@@ -7,6 +7,7 @@ import homePreview from "../../assets/dashboard/home_preview.png"
 import backgroundImage from "../../assets/dashboard/background_image.png"
 import BackgroundSelect from '@/app/components/BackgroundSelect';
 import Toggle from '@/app/components/Toggle';
+import Dropzone from '@/app/components/Dropzone';
 
 const Page = () => {
   const { isSidebarOut } = useSidebarContext();
@@ -46,7 +47,11 @@ const Page = () => {
               <h2 className='font-bold text-lg'>Logo</h2>
               <p className='font-semibold text-themeColor2'>Upload a logo that will apear on the top left of Dashworks. If you don&rsquo;t upload a logo, we will use your company name instead.</p>
             </div>
-            <div>
+            <div className='flex items-center gap-x-8'>
+              <Dropzone content={<>
+                <span className="p-8 font-semibold text-themeColor2">
+                  Your Logo
+                </span></>} />
               <Button2 text={"Change logo"} />
             </div>
             <div className='border p-4 rounded-xl text-themeColorDark font-medium'>
@@ -96,7 +101,7 @@ const Page = () => {
               <Toggle id={"allowUser"} isChecked={isAllowUserToggleChecked} onChangeHandler={allowUserHandler} />
             </div>
           </div>
-          <div className='border-b-2 pb-8 flex justify-between items-center'>
+          <div className='pb-8 flex justify-between items-center'>
             <label htmlFor={"setDashworks"} className='space-y-2 cursor-pointer flex-1'>
               <h2 className='font-bold text-lg'>Set Dashworks as your team&rsquo;s new tab page</h2>
               <p className='font-semibold text-themeColor2'>Allow user to override the company homepage with their own background.</p>

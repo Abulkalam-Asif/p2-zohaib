@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Button2 from './Button2';
 import Image from 'next/image';
+import Dropzone from './Dropzone';
 
 const BackgroundSelect = ({ label, description, idHtmlFor, name, isChecked, backgroundImage, onChangeHandler }) => {
 
@@ -15,8 +16,9 @@ const BackgroundSelect = ({ label, description, idHtmlFor, name, isChecked, back
         <p className='font-medium text-themeColor2'>{description}</p>
         <div className='rounded-xl overflow-hidden h-60'>
           {backgroundImage ?
-            <Image
-              src={backgroundImage} alt='background image' />
+            <Dropzone content={<>
+              <Image src={backgroundImage} alt='background image' />
+            </>} />
             :
             <button className='block w-full h-full bg-themeColor font-bold text-white'>
               Your background color
