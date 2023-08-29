@@ -32,7 +32,7 @@ const Page = () => {
         <div className='max-w-[1000px] mx-auto space-y-16 relative'>
           <div className='border-b-2 pb-2 space-y-2'>
             <h1 className='text-2xl font-bold'>Settings</h1>
-            <p className='font-semibold text-themeColor2'>Manage and edit your company's information and homepage.</p>
+            <p className='font-semibold text-themeColor2'>Manage and edit your company&rsquo;s information and homepage.</p>
           </div>
           <form className='border-b-2 pb-8'>
             <div className='space-y-2 mb-6'>
@@ -44,7 +44,7 @@ const Page = () => {
           <div className='border-b-2 pb-8 space-y-6'>
             <div className='space-y-2'>
               <h2 className='font-bold text-lg'>Logo</h2>
-              <p className='font-semibold text-themeColor2'>Upload a logo that will apear on the top left of Dashworks. If you don't upload a logo, we will use your company name instead.</p>
+              <p className='font-semibold text-themeColor2'>Upload a logo that will apear on the top left of Dashworks. If you don&rsquo;t upload a logo, we will use your company name instead.</p>
             </div>
             <div>
               <Button2 text={"Change logo"} />
@@ -56,7 +56,7 @@ const Page = () => {
           <div className='border-b-2 pb-8 space-y-6'>
             <div className='space-y-2'>
               <h2 className='font-bold text-lg'>Home preview</h2>
-              <p className='font-semibold text-themeColor2'>Preview your appearance settings on your company's homepage.</p>
+              <p className='font-semibold text-themeColor2'>Preview your appearance settings on your company&rsquo;s homepage.</p>
             </div>
             <div className='rounded-xl overflow-hidden'>
               <Image width={1000} alt='homePreview' className='w-full h-auto' src={homePreview} />
@@ -90,7 +90,7 @@ const Page = () => {
           <div className='border-b-2 pb-8 flex justify-between items-center'>
             <label htmlFor='allowUser' className='space-y-2 cursor-pointer flex-1'>
               <h2 className='font-bold text-lg'>Allow users to set their own background</h2>
-              <p className='font-semibold text-themeColor2'>This lets your team access Dashworks from their browser's new tab page.</p>
+              <p className='font-semibold text-themeColor2'>This lets your team access Dashworks from their browser&rsquo;s new tab page.</p>
             </label>
             <div>
               <Toggle id={"allowUser"} isChecked={isAllowUserToggleChecked} onChangeHandler={allowUserHandler} />
@@ -98,7 +98,7 @@ const Page = () => {
           </div>
           <div className='border-b-2 pb-8 flex justify-between items-center'>
             <label htmlFor={"setDashworks"} className='space-y-2 cursor-pointer flex-1'>
-              <h2 className='font-bold text-lg'>Set Dashworks as your team's new tab page</h2>
+              <h2 className='font-bold text-lg'>Set Dashworks as your team&rsquo;s new tab page</h2>
               <p className='font-semibold text-themeColor2'>Allow user to override the company homepage with their own background.</p>
             </label>
             <div>
