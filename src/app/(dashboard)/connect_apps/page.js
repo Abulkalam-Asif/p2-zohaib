@@ -5,6 +5,7 @@ import AppsTabs from '@/app/containers/AppsTabs';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { useSidebarContext } from '@/app/contexts/SidebarContext';
+import ChatContainer from '@/app/containers/ChatContainer';
 
 const Page = () => {
   const { isSidebarOut } = useSidebarContext();
@@ -27,6 +28,7 @@ const Page = () => {
             </button>
           </div>
         </div>
+        <ChatContainer />
       </div>
     </>
   )

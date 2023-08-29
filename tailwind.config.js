@@ -23,6 +23,9 @@ module.exports = {
       // => @media (max-width: 480px) { ... }
     },
     extend: {
+      boxShadow: {
+        "3xl": "rgba(50, 50, 93, 0.25) 0px 16px 27px -5px, rgba(0, 0, 0, 0.3) 0px -8px 16px -8px"
+      },
       colors: {
         "themeColor": "#5c90ff",
         "themeColorLight": "#cfddff",

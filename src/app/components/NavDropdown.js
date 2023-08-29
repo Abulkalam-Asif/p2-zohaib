@@ -12,7 +12,7 @@ const NavDropdown = ({ ishocused, isClicked, dropdownItems, dropdownAlignment = 
   }
   return (
     <>
-      <div className={`absolute rounded-xl w-max bg-white top-full ${dropdownAlignmentClasses} grid ${ishocused || isClicked ? "grid-rows-[1fr] shadow-2xl p-4" : "grid-rows-[0fr]"} transition-all duration-200 md:static md:rounded-none md:w-full md:shadow-none md:pl-8 md:py-0`}>
+      <div className={`absolute rounded-xl w-max bg-white top-full ${dropdownAlignmentClasses} grid ${ishocused || isClicked ? "grid-rows-[1fr] shadow-3xl p-4" : "grid-rows-[0fr]"} transition-all duration-200 md:static md:rounded-none md:w-full md:shadow-none md:pl-8 md:py-0`}>
         <ul className='overflow-hidden grid grid-cols-2 md:grid-cols-1'>
           {
             dropdownItems?.map((item, index) => (

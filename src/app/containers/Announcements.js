@@ -14,9 +14,9 @@ const Announcements = () => {
         <div className='px-6 py-4 border-b-2'>
           <h2 className='text-xl text-black font-semibold'>Announcements</h2>
         </div>
-        <div className='px-6 py-4 space-y-4'>
+        <div className='px-6 py-4 mb-4'>
           <Announcement heading={"Good job team"} description={"We made our revenue quota this week."} timeAgo={"7 days ago"} />
-          <div className={`grid transition-all duration-300 ${areAnnouncementsExpended ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
+          <div className={`grid transition-all duration-300 ${areAnnouncementsExpended ? "mt-4 grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
             <div className='overflow-hidden space-y-4'>
               <Announcement
                 heading={"New Feature Release"}

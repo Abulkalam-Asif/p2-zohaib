@@ -60,7 +60,7 @@ const BookmarksDiv = ({ heading, bookmarks, setBookmarks }) => {
           isBookmarkBoxVisible &&
           <>
             <div className='fixed top-0 left-0 right-0 bottom-0 z-30 bg-black opacity-20' onClick={toggleBookmarkBox}></div>
-            <div className='fixed left-1/2 top-1/2 -translate-y-1/2 bg-white px-10 py-10 rounded-xl shadow-2xl z-40'>
+            <div className='fixed left-1/2 top-1/2 -translate-y-1/2 bg-white px-10 py-10 rounded-xl shadow-3xl z-40'>
               <button className='absolute top-3 right-4' onClick={toggleBookmarkBox}>
                 <FontAwesomeIcon icon={faX} width={16} height={16} />
               </button>
