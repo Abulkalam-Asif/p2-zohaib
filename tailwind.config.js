@@ -27,7 +27,9 @@ module.exports = {
         "3xl": "rgba(50, 50, 93, 0.25) 0px 16px 27px -5px, rgba(0, 0, 0, 0.3) 0px -8px 16px -8px"
       },
       colors: {
+        "themeColorDark": "#2463eb",
         "themeColor": "#5c90ff",
+        "themeColorMedium": "#94b6ff",
         "themeColorLight": "#cfddff",
         "themeColorExtraLight": "#ebf1ff",
         "logosColor": "#beced6",

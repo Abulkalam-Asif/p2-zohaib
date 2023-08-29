@@ -11,7 +11,7 @@ const Announcements = () => {
   return (
     <>
       <div className='bg-white rounded-xl py-4'>
-        <div className='px-6 py-4 border-b-2'>
+        <div className='px-6 py-4 border-b-2 border-themeColor2Light'>
           <h2 className='text-xl text-black font-semibold'>Announcements</h2>
         </div>
         <div className='px-6 py-4 mb-4'>
