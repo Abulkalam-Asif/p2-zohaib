@@ -8,7 +8,7 @@ import { useThemeColorContext } from '../contexts/ThemeColorContext';
 const BackgroundSelect = ({ label, description, idHtmlFor, name, isChecked, backgroundImage, onChangeHandler, isColorsContainerVisible, colorsContainerToggleHandler }) => {
   const { themeColor, themeColorHandler } = useThemeColorContext()
 
-  const [themePreviewBoxBg, setThemePreviewBoxBg] = useState("bg-themeColor1Base");
+  const [themePreviewBoxBg, setThemePreviewBoxBg] = useState(themeColor.bg.base);
   const [tempThemeColor, setTempThemeColor] = useState("themeColor1");
 
   const themeColorChangeLocalHandler = () => {
@@ -35,7 +35,7 @@ const BackgroundSelect = ({ label, description, idHtmlFor, name, isChecked, back
             :
             <>
               <div className='rounded-xl overflow-hidden h-60'>
-                <button onClick={colorsContainerToggleHandler} title='Choose a Background Color' className={`block w-full h-full ${themePreviewBoxBg.background} font-bold text-white`}>
+                <button onClick={colorsContainerToggleHandler} title='Choose a Background Color' className={`block w-full h-full  ${themePreviewBoxBg} font-bold text-white`}>
                   Your background color
                 </button>
               </div>

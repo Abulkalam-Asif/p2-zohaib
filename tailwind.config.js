@@ -44,12 +44,41 @@ module.exports = {
         "themeColor2Lighter": "#99ffc5",
         "themeColor2Lightest": "#d9ffe9",
 
+        "themeColor3Dark": "#1d99a9",
         "themeColor3Base": "#2cbad1",
+        "themeColor3Light": "#4acbdb",
+        "themeColor3Lighter": "#80e4e7",
+        "themeColor3Lightest": "#b8f8f9",
+
+        "themeColor4Dark": "#d54e49",
         "themeColor4Base": "#e35546",
+        "themeColor4Light": "#f97a7a",
+        "themeColor4Lighter": "#ffb7b7",
+        "themeColor4Lightest": "#ffe5e7",
+
+        "themeColor5Dark": "#c7367b",
         "themeColor5Base": "#d438d6",
+        "themeColor5Light": "#e568a2",
+        "themeColor5Lighter": "#f9a3cc",
+        "themeColor5Lightest": "#ffd0e2",
+
+        "themeColor6Dark": "#e3631c",
         "themeColor6Base": "#fa8a32",
+        "themeColor6Light": "#f7862a",
+        "themeColor6Lighter": "#ffc335",
+        "themeColor6Lightest": "#ffeb57",
+
+        "themeColor7Dark": "#6d4c9b",
         "themeColor7Base": "#7e62b3",
+        "themeColor7Light": "#9373ba",
+        "themeColor7Lighter": "#c0a2d9",
+        "themeColor7Lightest": "#dbe5f2",
+
+        "themeColor8Dark": "#0f9d58",
         "themeColor8Base": "#1abc9c",
+        "themeColor8Light": "#38c67f",
+        "themeColor8Lighter": "#64d9b2",
+        "themeColor8Lightest": "#94f2c7",
       },
       rotate: {
         "18": "18deg"
