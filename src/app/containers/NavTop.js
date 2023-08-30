@@ -4,7 +4,7 @@ import LinkButton from '../components/LinkButton'
 const NavTop = () => {
   return (
     <>
-      <nav className='w-full md:hidden bg-themeColorExtraLight'>
+      <nav className='w-full md:hidden bg-themeColor1Lightest'>
         <ul className='max-w-8xl mx-auto px-8 pt-4 pb-4 flex justify-end items-center'>
           <li>
             <LinkButton text={"Sign up"} type='plain' size='small' href={"#"} />

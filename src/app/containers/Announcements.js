@@ -11,7 +11,7 @@ const Announcements = () => {
   return (
     <>
       <div className='bg-white rounded-xl py-4'>
-        <div className='px-6 py-4 border-b-2 border-themeColor2Light'>
+        <div className='px-6 py-4 border-b-2 border-themeColor0Lighter'>
           <h2 className='text-xl text-black font-semibold'>Announcements</h2>
         </div>
         <div className='px-6 py-4 mb-4'>
@@ -39,7 +39,7 @@ const Announcements = () => {
           </div>
         </div>
         <div className='mx-6 mb-4'>
-          <button className='border-2 border-themeColor2 rounded-lg px-6 py-2 font-semibold' onClick={toggleAnnouncements}>{areAnnouncementsExpended ? "Show less" : "See all announcements"}</button>
+          <button className='border-2 border-themeColor0Base rounded-lg px-6 py-2 font-semibold' onClick={toggleAnnouncements}>{areAnnouncementsExpended ? "Show less" : "See all announcements"}</button>
         </div>
       </div>
     </>

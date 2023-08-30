@@ -5,11 +5,11 @@ import React from 'react'
 const LinkButton = ({ text, size = "medium", href, type = "solid", className = "", hasIcon = false }) => {
   let typeStyles = "";
   if (type === "solid") {
-    typeStyles = "bg-black text-white border-2 border-black hocus:bg-themeColor hocus:text-black hocus:border-themeColor";
+    typeStyles = "bg-black text-white border-2 border-black hocus:bg-themeColor1Base hocus:text-black hocus:border-themeColor1Base";
   } else if (type === "outlined") {
-    typeStyles = "bg-white text-black border-2 border-black hocus:bg-themeColor hocus:text-black hocus:border-themeColor";
+    typeStyles = "bg-white text-black border-2 border-black hocus:bg-themeColor1Base hocus:text-black hocus:border-themeColor1Base";
   } else if (type === "plain") {
-    typeStyles = "text-black bg-themeColorExtraLight hocus:bg-themeColorLight";
+    typeStyles = "text-black bg-themeColor1Lightest hocus:bg-themeColor1Lighter";
   }
 
   let sizeStyles = "";

@@ -8,7 +8,7 @@ import img3 from "../assets/GMDImg3.png";
 const GMDSection = () => {
   return (
     <>
-      <div className='w-full bg-themeColorExtraLight'>
+      <div className='w-full bg-themeColor1Lightest'>
         <div className='max-w-8xl mx-auto px-8 py-8'>
           <div>
             <H2 text={"Get more done with Guru"} />

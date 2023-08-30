@@ -27,14 +27,29 @@ module.exports = {
         "3xl": "rgba(50, 50, 93, 0.25) 0px 16px 27px -5px, rgba(0, 0, 0, 0.3) 0px -8px 16px -8px"
       },
       colors: {
-        "themeColorDark": "#2463eb",
-        "themeColor": "#5c90ff",
-        "themeColorMedium": "#94b6ff",
-        "themeColorLight": "#cfddff",
-        "themeColorExtraLight": "#ebf1ff",
         "logosColor": "#beced6",
-        "themeColor2": "#949494",
-        "themeColor2Light": "#ebebeb"
+        "themeColor0Base": "#949494",
+        "themeColor0Light": "#d1d1d1",
+        "themeColor0Lighter": "#ebebeb",
+
+        "themeColor1Dark": "#2463eb",
+        "themeColor1Base": "#5c90ff",
+        "themeColor1Light": "#94b6ff",
+        "themeColor1Lighter": "#cfddff",
+        "themeColor1Lightest": "#ebf1ff",
+
+        "themeColor2Dark": "#029c43",
+        "themeColor2Base": "#2ecc71",
+        "themeColor2Light": "#61e89b",
+        "themeColor2Lighter": "#99ffc5",
+        "themeColor2Lightest": "#d9ffe9",
+
+        "themeColor3Base": "#2cbad1",
+        "themeColor4Base": "#e35546",
+        "themeColor5Base": "#d438d6",
+        "themeColor6Base": "#fa8a32",
+        "themeColor7Base": "#7e62b3",
+        "themeColor8Base": "#1abc9c",
       },
       rotate: {
         "18": "18deg"

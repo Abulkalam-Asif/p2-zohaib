@@ -12,7 +12,7 @@ const Announcement = ({ heading, description, timeAgo }) => {
           <span>{heading}</span>
         </h4>
         <p className='font-medium'>{description}</p>
-        <div className='flex items-center gap-x-3 text-themeColor2'>
+        <div className='flex items-center gap-x-3 text-themeColor0Base'>
           <FontAwesomeIcon icon={faUserCircle} size="1x" width={16} />
           <span>{timeAgo}</span>
         </div>

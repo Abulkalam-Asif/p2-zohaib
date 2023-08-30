@@ -7,7 +7,7 @@ const AppsTabsTable = ({ appsData, selectedTab }) => {
     <>
       <div className="relative overflow-x-auto">
         <table className="w-full text-base text-left text-gray-500">
-          <thead className="text-sm text-zinc-900 uppercase bg-themeColor2Light">
+          <thead className="text-sm text-zinc-900 uppercase bg-themeColor0Lighter">
             <tr className='grid grid-cols-4'>
               <th scope="col" className="px-6 py-3 col-span-2 font-medium">
                 Apps
@@ -24,7 +24,7 @@ const AppsTabsTable = ({ appsData, selectedTab }) => {
             {appsData
               .filter(app => app.categories.includes(selectedTab))
               .map((app, index) => (
-                <tr key={index} className="grid  grid-cols-4 bg-white border-b-2 border-b-themeColor2Light">
+                <tr key={index} className="grid  grid-cols-4 bg-white border-b-2 border-b-themeColor0Lighter">
                   <td
                     className="col-span-2 flex items-center gap-x-2 px-6 py-4 font-semibold text-black whitespace-nowrap"
                   >

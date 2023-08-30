@@ -3,9 +3,12 @@ import HomeSearchBar from '@/app/components/HomeSearchBar';
 import Announcements from '@/app/containers/Announcements';
 import BookmarksDiv from '@/app/containers/BookmarksDiv';
 import { useSidebarContext } from '@/app/contexts/SidebarContext';
+import { useThemeColorContext } from '@/app/contexts/ThemeColorContext';
 import React, { useState } from 'react'
 
 const Page = () => {
+  const { themeColor } = useThemeColorContext()
+
   const { isSidebarOut } = useSidebarContext();
   const [myBookmarks, setMyBookmarks] = useState([
     { bookmarkTitle: "Gmail", bookmarkLink: "https://mail.google.com/mail/u/0/", id: "83e9117a-65f8-4627-9b43-9af751558d49" },
@@ -15,7 +18,7 @@ const Page = () => {
 
   return (
     <>
-      <div className={`min-h-screen bg-themeColor transition-all pt-20 pb-10 pr-8 ${isSidebarOut ? "pl-72 duration-100" : "pl-0 delay-200 duration-400"}`}>
+      <div className={`min-h-screen ${themeColor.bg.base} transition-all pt-20 pb-10 pr-8 ${isSidebarOut ? "pl-72 duration-100" : "pl-0 delay-200 duration-400"}`}>
         <div className='max-w-[1000px] mx-auto space-y-16 relative'>
           <div className='space-y-8'>
             <h1 className='text-6xl font-medium text-center text-white'>Good Morning, John</h1>

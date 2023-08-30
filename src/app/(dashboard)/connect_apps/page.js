@@ -20,7 +20,7 @@ const Page = () => {
           <Notice />
           <AppsTabs />
           <div>
-            <button disabled={true} className={`flex items-center gap-x-2 py-2 px-4 rounded-md font-semibold border text-zinc-400 bg-themeColor2Light border-themeColor2Light`}>
+            <button disabled={true} className={`flex items-center gap-x-2 py-2 px-4 rounded-md font-semibold border text-zinc-400 bg-themeColor0Lighter border-themeColor0Lighter`}>
               <span>
                 Continue
               </span>

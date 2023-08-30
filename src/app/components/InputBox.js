@@ -16,7 +16,7 @@ const InputBox = ({ nameIdHtmlFor, type = "text", label = "", required = true })
       <div className='flex flex-col relative'>
         <label className='font-semibold mb-2' htmlFor={nameIdHtmlFor}>{`${label}${required && "*"}`}</label>
         <div>
-          <input className='block w-full outline-none border-b-2 border-b-themeColorLight' required={required} onFocus={inputFocusHandler} onBlur={inputBlurHandler} type={type} name={nameIdHtmlFor} id={nameIdHtmlFor} />
+          <input className='block w-full outline-none border-b-2 border-b-themeColor1Lighter' required={required} onFocus={inputFocusHandler} onBlur={inputBlurHandler} type={type} name={nameIdHtmlFor} id={nameIdHtmlFor} />
           <div className={`h-0.5 -my-0.5 mx-auto bg-black transition-all duration-300 ${isInputFocused ? "w-full" : "w-0"}`}></div>
         </div>
       </div >

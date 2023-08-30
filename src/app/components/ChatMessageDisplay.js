@@ -7,7 +7,7 @@ const ChatMessageDisplay = ({ header, timeAgo, message, isChatExpanded }) => {
     <>
       <div className={`grid transition-all px-7 duration-300 ${isChatExpanded ? "grid-rows-[1fr] py-5 bg-white shadow-3xl rounded-xl" : "grid-rows-[0fr] delay-200"}`}>
         <div className='overflow-hidden'>
-          <div className='flex items-center gap-x-2 text-sm font-medium text-themeColor2'>
+          <div className='flex items-center gap-x-2 text-sm font-medium text-themeColor0Base'>
             <span>{header}</span>
             <FontAwesomeIcon icon={faCircle} width={4} />
             <span>{timeAgo}</span>
