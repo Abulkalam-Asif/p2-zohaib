@@ -1,23 +1,20 @@
 import React from 'react';
 
-const ColorsContainer = ({ colorsContainerToggleHandler, setThemePreviewBoxBg, setTempThemeColor }) => {
+const ColorsContainer = ({ colorsContainerToggleHandler, setThemePreviewBoxBg }) => {
   const themeColorsList = [
-    ['themeColor1', 'bg-themeColor1Base'],
-    ['themeColor2', 'bg-themeColor2Base'],
-    ['themeColor3', 'bg-themeColor3Base'],
-    ['themeColor4', 'bg-themeColor4Base'],
-    ['themeColor5', 'bg-themeColor5Base'],
-    ['themeColor6', 'bg-themeColor6Base'],
-    ['themeColor7', 'bg-themeColor7Base'],
-    ['themeColor8', 'bg-themeColor8Base'],
+    'bg-themeColor1Base',
+    'bg-themeColor2Base',
+    'bg-themeColor3Base',
+    'bg-themeColor4Base',
+    'bg-themeColor5Base',
+    'bg-themeColor6Base',
+    'bg-themeColor7Base',
+    'bg-themeColor8Base',
   ]
 
   const handleButtonClick = (event) => {
     const selectedBgColor = event.target.getAttribute('data-bg-color');
     setThemePreviewBoxBg(selectedBgColor);
-
-    const selectedThemeColor = event.target.getAttribute('data-theme-color');
-    setTempThemeColor(selectedThemeColor);
 
     colorsContainerToggleHandler();
   };
@@ -28,9 +25,8 @@ const ColorsContainer = ({ colorsContainerToggleHandler, setThemePreviewBoxBg, s
         {themeColorsList.map((themeColorItem, index) => (
           <button
             key={index}
-            className={`w-8 h-8 rounded-lg ${themeColorItem[1]} hover:scale-125 transition-all duration-150`}
-            data-theme-color={themeColorItem[0]}
-            data-bg-color={themeColorItem[1]}
+            className={`w-8 h-8 rounded-lg ${themeColorItem} hover:scale-125 transition-all duration-150`}
+            data-bg-color={themeColorItem}
             onClick={handleButtonClick}
           ></button>
         ))}

@@ -62,68 +62,8 @@ export function ThemeColorProvider({ children }) {
     }
   })
 
-  const themeColorHandler = (themeColor) => {
-    setThemeColor({
-      text: {
-        "dark": `text-${themeColor}Dark`,
-        "base": `text-${themeColor}Base`,
-        "light": `text-${themeColor}Light`,
-        "lighter": `text-${themeColor}Lighter`,
-        "lightest": `text-${themeColor}Lightest`,
-        "hocus": {
-          "dark": `hocus:text-${themeColor}Dark`,
-          "base": `hocus:text-${themeColor}Base`,
-          "light": `hocus:text-${themeColor}Light`,
-          "lighter": `hocus:text-${themeColor}Lighter`,
-          "lightest": `hocus:text-${themeColor}Lightest`,
-        }
-      },
-      bg: {
-        "dark": `bg-${themeColor}Dark`,
-        "base": `bg-${themeColor}Base`,
-        "light": `bg-${themeColor}Light`,
-        "lighter": `bg-${themeColor}Lighter`,
-        "lightest": `bg-${themeColor}Lightest`,
-        "hocus": {
-          "dark": `hocus:bg-${themeColor}Dark`,
-          "base": `hocus:bg-${themeColor}Base`,
-          "light": `hocus:bg-${themeColor}Light`,
-          "lighter": `hocus:bg-${themeColor}Lighter`,
-          "lightest": `hocus:bg-${themeColor}Lightest`,
-        },
-        "peerChecked": {
-          "base": `peer-checked:bg-${themeColor}Base`,
-        },
-        "after": {
-          "dark": `after:bg-${themeColor}Dark`,
-        }
-      },
-      border: {
-        "dark": `border-${themeColor}Dark`,
-        "base": `border-${themeColor}Base`,
-        "light": `border-${themeColor}Light`,
-        "lighter": `border-${themeColor}Lighter`,
-        "lightest": `border-${themeColor}Lightest`,
-        "hocus": {
-          "dark": `hocus:border-${themeColor}Dark`,
-          "base": `hocus:border-${themeColor}Base`,
-          "light": `hocus:border-${themeColor}Light`,
-          "lighter": `hocus:border-${themeColor}Lighter`,
-          "lightest": `hocus:border-${themeColor}Lightest`,
-        }
-      },
-      accent: {
-        "dark": `accent-${themeColor}Dark`,
-        "base": `accent-${themeColor}Base`,
-        "light": `accent-${themeColor}Light`,
-        "lighter": `accent-${themeColor}Lighter`,
-        "lightest": `accent-${themeColor}Lightest`,
-      }
-    })
-  };
-
   return (
-    <ThemeColorContext.Provider value={{ themeColor, themeColorHandler }}>
+    <ThemeColorContext.Provider value={{ themeColor }}>
       {children}
     </ThemeColorContext.Provider>
   );

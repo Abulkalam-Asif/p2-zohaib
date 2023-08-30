@@ -6,16 +6,9 @@ import ColorsContainer from './ColorsContainer';
 import { useThemeColorContext } from '../contexts/ThemeColorContext';
 
 const BackgroundSelect = ({ label, description, idHtmlFor, name, isChecked, backgroundImage, onChangeHandler, isColorsContainerVisible, colorsContainerToggleHandler }) => {
-  const { themeColor, themeColorHandler } = useThemeColorContext()
+  const { themeColor } = useThemeColorContext()
 
   const [themePreviewBoxBg, setThemePreviewBoxBg] = useState(themeColor.bg.base);
-  const [tempThemeColor, setTempThemeColor] = useState("themeColor1");
-
-  const themeColorChangeLocalHandler = () => {
-    if (label === "color") {
-      themeColorHandler(tempThemeColor);
-    }
-  }
 
   return (
     <label htmlFor={idHtmlFor} className={`cursor-pointer flex gap-x-2 pl-6 pr-14 py-4 border-2 rounded-xl ${isChecked ? `${themeColor.border.base} ${themeColor.bg.lightest}` : "border-themeColor0Base bg-white "}`}>
@@ -40,12 +33,12 @@ const BackgroundSelect = ({ label, description, idHtmlFor, name, isChecked, back
                 </button>
               </div>
               {isColorsContainerVisible &&
-                <ColorsContainer colorsContainerToggleHandler={colorsContainerToggleHandler} setThemePreviewBoxBg={setThemePreviewBoxBg} setTempThemeColor={setTempThemeColor} />
+                <ColorsContainer colorsContainerToggleHandler={colorsContainerToggleHandler} setThemePreviewBoxBg={setThemePreviewBoxBg} />
               }
             </>
           }
         </div>
-        <Button2 onClick={themeColorChangeLocalHandler} text={`Change ${label}`} isDisabled={!isChecked} />
+        <Button2 text={`Change ${label}`} isDisabled={!isChecked} />
       </div>
     </label>
   );
