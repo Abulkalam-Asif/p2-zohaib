@@ -65,7 +65,7 @@ const BookmarksDiv = ({ heading, bookmarksList, setBookmarksList, category }) =>
         <div>
           <h2 className='text-white font-semibold'>{heading}</h2>
         </div>
-        <div className='grid grid-cols-6 gap-x-4 gap-y-8 px-8 md:grid-cols-3 sm:grid-cols-2 md:gap-2'>
+        <div className='grid grid-cols-6 gap-x-4 gap-y-8 px-8 md:grid-cols-3 sm:grid-cols-2 md:gap-2 sm:px-0'>
           {
             bookmarksList?.map((bookmark) => (
               <Bookmark key={bookmark.id} id={bookmark.id} title={bookmark.bookmarkTitle} href={bookmark.bookmarkLink} removeBookmarkHandler={removeBookmarkHandler} />

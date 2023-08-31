@@ -47,7 +47,7 @@ const Page = () => {
 
   return (
     <>
-      <div className={`min-h-screen transition-all pt-20 pb-10 pr-8 md:px-12 md:pt-24 md:pb-8 sm:px-4 ${isSidebarOut ? "pl-72 duration-100" : "pl-0 delay-200 duration-400"}`}>
+      <div className={`min-h-screen transition-all pt-20 pb-10 pr-8 md:px-12 md:pt-24 md:pb-8 sm:px-6 ${isSidebarOut ? "pl-72 duration-100" : "pl-0 delay-200 duration-400  xl:pl-28"}`}>
         <div className='max-w-[1000px] mx-auto space-y-16 relative'>
           <div className='border-b-2 pb-2 space-y-2'>
             <h1 className='font-bold'>Settings</h1>

@@ -12,7 +12,7 @@ const Page = () => {
 
   return (
     <>
-      <div className={`min-h-screen transition-all pt-20 pb-10 pr-8 md:px-12 md:pt-24 md:pb-28 sm:px-4 ${isSidebarOut ? "pl-72 duration-100" : "pl-0 delay-200 duration-300"}`}>
+      <div className={`min-h-screen transition-all pt-20 pb-10 pr-8 lg:pb-28 md:px-12 md:pt-24 sm:px-6 ${isSidebarOut ? "pl-72 duration-100" : "pl-0 delay-200 duration-300 xl:pl-28"}`}>
         <div className='max-w-4xl mx-auto space-y-8'>
           <div>
             <h1 className='font-bold'>Connect Your Data Sources</h1>
