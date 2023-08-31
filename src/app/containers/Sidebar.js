@@ -23,10 +23,17 @@ const Sidebar = () => {
           <div className='px-4'>
             <LinkButton3 text={"Dashworks"} icon={faBars} onClick={toggleSidebar} isSidebarOut={isSidebarOut} />
           </div>
-          <div className='mt-4 flex-1 flex flex-col gap-y-2 px-4'>
+          {/* For desktop */}
+          <div className='mt-4 flex-1 flex flex-col gap-y-2 px-4 md:hidden'>
             <LinkButton2 text={"Home"} isSidebarOut={isSidebarOut} icon={homeIcon} href='/home' />
             <LinkButton2 text={"Settings"} isSidebarOut={isSidebarOut} icon={settingsIcon} href='/settings' />
             <LinkButton2 text={"Connect Apps"} isSidebarOut={isSidebarOut} icon={connectIcon} href='/connect_apps' />
+          </div>
+          {/* For Mobile */}
+          <div className='hidden md:mt-4 md:flex-1 md:flex md:flex-col md:gap-y-2 md:px-4'>
+            <LinkButton2 onClick={toggleSidebar} text={"Home"} isSidebarOut={isSidebarOut} icon={homeIcon} href='/home' />
+            <LinkButton2 onClick={toggleSidebar} text={"Settings"} isSidebarOut={isSidebarOut} icon={settingsIcon} href='/settings' />
+            <LinkButton2 onClick={toggleSidebar} text={"Connect Apps"} isSidebarOut={isSidebarOut} icon={connectIcon} href='/connect_apps' />
           </div>
           <hr className='border-t-2 border-themeColor0Lighter my-6' />
           <div className='flex flex-col gap-y-2 px-4'>
