@@ -24,7 +24,8 @@ module.exports = {
     },
     extend: {
       boxShadow: {
-        "3xl": "rgba(50, 50, 93, 0.25) 0px 16px 27px -5px, rgba(0, 0, 0, 0.3) 0px -8px 16px -8px"
+        "3xl": "rgba(50, 50, 93, 0.25) 0px 16px 27px -5px, rgba(0, 0, 0, 0.3) 0px -8px 16px -8px",
+        "4xl": "rgba(50, 50, 93, 0.25) 15px 0px 27px -5px, rgba(0, 0, 0, 0.3) 15px 0px 16px -8px"
       },
       colors: {
         "logosColor": "#beced6",

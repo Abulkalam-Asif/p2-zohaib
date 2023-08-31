@@ -18,7 +18,7 @@ const Sidebar = () => {
 
   return (
     <>
-      <aside className={`fixed top-0 left-0 bottom-0 h-screen w-fit border-r-2 border-r-themeColor0Lighter bg-white z-50 md:transition-all duration-200 md:shadow-3xl ${isSidebarOut ? "left-0 md:-left-full" : "md:left-0"}`}>
+      <aside className={`fixed top-0 left-0 bottom-0 h-screen w-fit border-r-2 border-r-themeColor0Lighter bg-white z-50 md:transition-all duration-200 md:shadow-4xl ${isSidebarOut ? "left-0 md:-left-full" : "md:left-0"}`}>
         <div className='flex flex-col items-stretch h-full py-6 md:pt-20'>
           <div className='px-4'>
             <LinkButton3 text={"Dashworks"} icon={faBars} onClick={toggleSidebar} isSidebarOut={isSidebarOut} />
