@@ -6,7 +6,7 @@ import LinkButton from '../components/LinkButton'
 const MobileNavbar = ({ isMobNavbarOut }) => {
 
   return (
-    <nav className={`hidden md:block shadow-3xl bg-white fixed w-full ${isMobNavbarOut ? "top-0" : "-top-full"} transition-all duration-500 left-0 right-0 z-10 pt-24 overflow-y-auto`}>
+    <nav className={`hidden md:block shadow-3xl bg-white fixed max-h-screen w-full ${isMobNavbarOut ? "top-0" : "-top-full"} transition-all duration-500 left-0 right-0 z-10 pt-24 overflow-y-auto`}>
       <ul className="flex flex-col items-start">
         <Navitem text={"Product"} dropdownAlignment={"right"} dropdownItems={[{
           text: "Features",
