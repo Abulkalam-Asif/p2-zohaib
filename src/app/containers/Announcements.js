@@ -12,7 +12,7 @@ const Announcements = () => {
     <>
       <div className='bg-white rounded-xl py-4'>
         <div className='px-6 py-4 border-b-2 border-themeColor0Lighter'>
-          <h2 className='text-xl text-black font-semibold'>Announcements</h2>
+          <h2 className='text-lg text-black font-semibold'>Announcements</h2>
         </div>
         <div className='px-6 py-4 mb-4'>
           <Announcement heading={"Good job team"} description={"We made our revenue quota this week."} timeAgo={"7 days ago"} />

@@ -61,11 +61,11 @@ const BookmarksDiv = ({ heading, bookmarksList, setBookmarksList, category }) =>
 
   return (
     <>
-      <div className='flex flex-col gap-y-8'>
+      <div className='flex flex-col gap-y-8 sm:gap-y-4'>
         <div>
-          <h2 className='text-xl text-white font-semibold'>{heading}</h2>
+          <h2 className='text-white font-semibold'>{heading}</h2>
         </div>
-        <div className='grid grid-cols-6 gap-x-4 gap-y-8 px-8'>
+        <div className='grid grid-cols-6 gap-x-4 gap-y-8 px-8 md:grid-cols-3 sm:grid-cols-2 md:gap-2'>
           {
             bookmarksList?.map((bookmark) => (
               <Bookmark key={bookmark.id} id={bookmark.id} title={bookmark.bookmarkTitle} href={bookmark.bookmarkLink} removeBookmarkHandler={removeBookmarkHandler} />
@@ -80,9 +80,9 @@ const BookmarksDiv = ({ heading, bookmarksList, setBookmarksList, category }) =>
           isBookmarkBoxVisible &&
           <>
             <div className='fixed top-0 left-0 right-0 bottom-0 z-[90] bg-black opacity-30' onClick={toggleBookmarkBox}></div>
-            <div className='fixed w-1/2 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-xl shadow-3xl z-[99]'>
+            <div className='fixed w-1/2 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-white rounded-xl shadow-3xl z-[99] md:w-10/12 sm:w-full'>
               <div className='flex items-center justify-between px-6 pt-4 pb-3 border-b-2 border-themeColor0Lighter'>
-                <h3 className='font-semibold text-lg'>New {category} bookmark</h3>
+                <h3 className='font-semibold'>New {category} bookmark</h3>
                 <button className='px-3 py-2' onClick={toggleBookmarkBox}>
                   <FontAwesomeIcon icon={faX} width={16} height={16} />
                 </button>

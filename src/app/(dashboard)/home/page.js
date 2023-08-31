@@ -18,10 +18,10 @@ const Page = () => {
 
   return (
     <>
-      <div className={`min-h-screen ${themeColor.bg.base} transition-all pt-20 pb-10 pr-8 ${isSidebarOut ? "pl-72 duration-100" : "pl-0 delay-200 duration-400"}`}>
-        <div className='max-w-[1000px] mx-auto space-y-16 relative'>
+      <div className={`min-h-screen ${themeColor.bg.base} transition-all pt-20 pb-10 pr-8 md:px-12 md:pt-24 md:pb-8 sm:px-4 ${isSidebarOut ? "pl-72 duration-100" : "pl-0 delay-200 duration-400"}`}>
+        <div className='max-w-[1000px] mx-auto space-y-16 relative sm:space-y-8'>
           <div className='space-y-8'>
-            <h1 className='text-6xl font-medium text-center text-white'>Good Morning, John</h1>
+            <h1 className='text-6xl font-semibold text-center text-white md:text-4xl sm:text-3xl'>Good Morning, John</h1>
             <HomeSearchBar />
           </div>
           <BookmarksDiv heading={"My Bookmarks"} bookmarksList={myBookmarks} setBookmarksList={setMyBookmarks} category={"Personal"} />

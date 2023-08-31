@@ -4,7 +4,7 @@ import AppTabsLabel from '../components/AppTabsLabel'
 const AppsTabsHeader = ({ setSelectedTab, selectedTab }) => {
   return (
     <>
-      <div className='flex gap-x-3 border-b border-b-themeColor0Base'>
+      <div className='flex gap-x-3 border-b border-b-themeColor0Base overflow-x-auto  md:max-w-[700px] sm:max-w-[600px] xs:max-w-[350px]'>
         <AppTabsLabel text={"Popular"} label="popular" setSelectedTab={setSelectedTab} selectedTab={selectedTab} />
         <AppTabsLabel text={"All"} label="all" setSelectedTab={setSelectedTab} selectedTab={selectedTab} />
         <AppTabsLabel text={"Wiki & Docs"} label="wikis_&_docs" setSelectedTab={setSelectedTab} selectedTab={selectedTab} />

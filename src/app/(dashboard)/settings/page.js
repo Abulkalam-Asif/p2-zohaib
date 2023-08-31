@@ -47,25 +47,25 @@ const Page = () => {
 
   return (
     <>
-      <div className={`min-h-screen transition-all pt-20 pb-10 pr-8 ${isSidebarOut ? "pl-72 duration-100" : "pl-0 delay-200 duration-400"}`}>
+      <div className={`min-h-screen transition-all pt-20 pb-10 pr-8 md:px-12 md:pt-24 md:pb-8 sm:px-4 ${isSidebarOut ? "pl-72 duration-100" : "pl-0 delay-200 duration-400"}`}>
         <div className='max-w-[1000px] mx-auto space-y-16 relative'>
           <div className='border-b-2 pb-2 space-y-2'>
-            <h1 className='text-2xl font-bold'>Settings</h1>
+            <h1 className='font-bold'>Settings</h1>
             <p className='font-semibold text-themeColor0Base'>Manage and edit your company&rsquo;s information and homepage.</p>
           </div>
           <form className='border-b-2 pb-8'>
             <div className='space-y-2 mb-6'>
-              <label htmlFor='companyName' className='font-bold text-lg'>Company name</label>
+              <label htmlFor='companyName' className='font-bold'>Company name</label>
               <input type="text" id='companyName' name='companyName' className='font-medium bg-themeColor0Lighter py-3 px-5 rounded-xl w-full' placeholder='Enter company name (letters, numbers and symbols: @-#_.&~' />
             </div>
             <Button2 text={"Save"} />
           </form>
           <div className='border-b-2 pb-8 space-y-6'>
             <div className='space-y-2'>
-              <h2 className='font-bold text-lg'>Logo</h2>
+              <h2 className='font-bold'>Logo</h2>
               <p className='font-semibold text-themeColor0Base'>Upload a logo that will apear on the top left of Dashworks. If you don&rsquo;t upload a logo, we will use your company name instead.</p>
             </div>
-            <div className='flex items-center gap-x-8'>
+            <div className='flex items-center gap-x-8 gap-y-4 sm:flex-col'>
               <Dropzone title={"Choose your Logo"} content={<>
                 <span className="p-8 font-semibold text-themeColor0Base">
                   Your Logo
@@ -78,7 +78,7 @@ const Page = () => {
           </div>
           <div className='border-b-2 pb-8 space-y-6'>
             <div className='space-y-2'>
-              <h2 className='font-bold text-lg'>Home preview</h2>
+              <h2 className='font-bold'>Home preview</h2>
               <p className='font-semibold text-themeColor0Base'>Preview your appearance settings on your company&rsquo;s homepage.</p>
             </div>
             <div className='rounded-xl overflow-hidden'>
@@ -87,10 +87,10 @@ const Page = () => {
           </div>
           <div className='border-b-2 pb-8 space-y-6'>
             <div className='space-y-2'>
-              <h2 className='font-bold text-lg'>Default Background</h2>
+              <h2 className='font-bold'>Default Background</h2>
               <p className='font-semibold text-themeColor0Base'>Customize the look of your homepage. Your team members will see the background if they have not set their own background.</p>
             </div>
-            <div className='grid grid-cols-2 gap-x-4'>
+            <div className='grid grid-cols-2 gap-x-4 gap-y-4 md:grid-cols-1'>
               <BackgroundSelect
                 isChecked={selectedBackground === "image"}
                 label={"image"}
@@ -114,7 +114,7 @@ const Page = () => {
           </div>
           <div className='border-b-2 pb-8 flex justify-between items-center'>
             <label htmlFor='allowUser' className='space-y-2 cursor-pointer flex-1'>
-              <h2 className='font-bold text-lg'>Allow users to set their own background</h2>
+              <h2 className='font-bold'>Allow users to set their own background</h2>
               <p className='font-semibold text-themeColor0Base'>This lets your team access Dashworks from their browser&rsquo;s new tab page.</p>
             </label>
             <div>
@@ -123,7 +123,7 @@ const Page = () => {
           </div>
           <div className='pb-8 flex justify-between items-center'>
             <label htmlFor={"setDashworks"} className='space-y-2 cursor-pointer flex-1'>
-              <h2 className='font-bold text-lg'>Set Dashworks as your team&rsquo;s new tab page</h2>
+              <h2 className='font-bold'>Set Dashworks as your team&rsquo;s new tab page</h2>
               <p className='font-semibold text-themeColor0Base'>Allow user to override the company homepage with their own background.</p>
             </label>
             <div>
